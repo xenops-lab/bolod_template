@@ -1,0 +1,250 @@
+/*brandColor: #FFB117*/
+/* new brandColor: #00bc89; */
+
+/* ==========================================================================
+   fonts
+   ========================================================================== */
+/* Dosis */
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-bold-webfont.eot');
+    src: url('../fonts/dosis/dosis-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-bold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-bold-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-bold-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-bold-webfont.svg#dosisbold') format('svg');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-extrabold-webfont.eot');
+    src: url('../fonts/dosis/dosis-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-extrabold-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-extrabold-webfont.svg#dosisextrabold') format('svg');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-extralight-webfont.eot');
+    src: url('../fonts/dosis/dosis-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-extralight-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-extralight-webfont.svg#dosisextralight') format('svg');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-light-webfont.eot');
+    src: url('../fonts/dosis/dosis-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-light-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-light-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-light-webfont.svg#dosislight') format('svg');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-medium-webfont.eot');
+    src: url('../fonts/dosis/dosis-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-medium-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-medium-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-medium-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-medium-webfont.svg#dosismedium') format('svg');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-regular-webfont.eot');
+    src: url('../fonts/dosis/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-regular-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-regular-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis-semibold-webfont.eot');
+    src: url('../fonts/dosis/dosis-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-semibold-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-semibold-webfont.svg#dosissemibold') format('svg');
+    font-weight: 600;
+}
+
+/* Ubuntu */
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/ubuntu/ubuntu-bold-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-bold-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-bold-webfont.svg#ubuntubold') format('svg');
+	font-weight: 700;
+}
+
+@font-face {
+    font-family: 'ubuntui';
+    src: url('../fonts/ubuntu/ubuntu-bolditalic-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-bolditalic-webfont.svg#ubuntubold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ubuntui';
+    src: url('../fonts/ubuntu/ubuntu-italic-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-italic-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-italic-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-italic-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-italic-webfont.svg#ubuntuitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/ubuntu/ubuntu-light-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-light-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-light-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-light-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-light-webfont.svg#ubuntulight') format('svg');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'ubuntui';
+    src: url('../fonts/ubuntu/ubuntu-lightitalic-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-lightitalic-webfont.svg#ubuntulight_italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/ubuntu/ubuntu-medium-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-medium-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-medium-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-medium-webfont.svg#ubuntumedium') format('svg');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'ubuntui';
+    src: url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.svg#ubuntumedium_italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/ubuntu/ubuntu-regular-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-regular-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-regular-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu/ubuntu-regular-webfont.svg#ubunturegular') format('svg');
+    font-weight: 400;
+}
+
+/* courgette */
+@font-face {
+    font-family: 'courgette';
+    src: url('../fonts/courgette/courgette-regular-webfont.eot');
+    src: url('../fonts/courgette/courgette-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/courgette/courgette-regular-webfont.woff2') format('woff2'),
+         url('../fonts/courgette/courgette-regular-webfont.woff') format('woff'),
+         url('../fonts/courgette/courgette-regular-webfont.ttf') format('truetype'),
+         url('../fonts/courgette/courgette-regular-webfont.svg#courgetteregular') format('svg');
+    font-weight: 400;
+}
+
+/* Aller */
+@font-face {
+    font-family: 'aller';
+    src: url('../fonts/aller/aller_bd-webfont.eot');
+    src: url('../fonts/aller/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller/aller_bd-webfont.woff2') format('woff2'),
+         url('../fonts/aller/aller_bd-webfont.woff') format('woff'),
+         url('../fonts/aller/aller_bd-webfont.ttf') format('truetype'),
+         url('../fonts/aller/aller_bd-webfont.svg#allerbold') format('svg');
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   common css class
+   ========================================================================== */
+.flex-container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.center-y {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.center-x {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.center-xy {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.section-title {
+	font-family: 'dosis';
+	font-weight: 700;
+	color: #ffb117;
+	font-size: 2.625em;
+	text-transform: uppercase;
+	border-bottom: 2px dotted #ffb117;
+	max-width: 180px;
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+   about section
+   ========================================================================== */
+
+
