@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> test progress bar</title>
+	<style>
+		*::before,
+		*::after,
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body { font-family: 'Ubuntu'; color: #727272 }
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.skill { margin-top: 50px; }
+
+		.bar {
+			max-width: 400px;
+			height: 7px;
+			background-color: #e5e5e5;
+			border-radius: 5px;
+		}
+		.progress {
+			width: 0;
+			height: 100%;
+			background-color: tomato;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="skill">
+			<h3>Web Design: <span class="pah"></span>%</h3>
+			<div class="bar">
+				<div class="progress" data-pro="80"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<h3>Web Developing: <span class="pah"></span>%</h3>
+			<div class="bar">
+				<div class="progress" data-pro="60"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<h3>UI/UX: <span class="pah"></span>%</h3>
+			<div class="bar">
+				<div class="progress" data-pro="70"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<h3>APPs Developing: <span class="pah"></span>%</h3>
+			<div class="bar">
+				<div class="progress" data-pro="55"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+		$(function() {
+			var progress = $('.progress');
+			var pah = $('.pah');
+
+			for(var j = 0; j <= progress.length; j++) {
+				var pro = $(progress[j]).data('pro');
+
+				$(progress[j]).animate({width: pro + "%"}, 1000);
+
+				$(pah[j]).each(function () {
+					$(this).prop('Counter',0).animate({Counter: pro}, 
+					{
+						duration: 1000,
+						easing: 'swing',
+						step: function (now) {
+							$(this).text(Math.ceil(now));
+						}
+					});
+				});
+			}
+
+		});
+	</script>
+</body>
+</html>
