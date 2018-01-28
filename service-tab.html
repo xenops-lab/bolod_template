@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>service-tab</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.col {
+			float: left;
+			margin: 0 10px;
+		}
+
+		.sertab {
+			height: 200px;
+			width: 200px;
+			border-radius: 10px;
+			background-color: tomato;
+			text-align: center;
+			padding: 10px;
+			box-sizing: border-box;
+			cursor: pointer;
+			margin-top: 5px;
+		}
+		
+		.sericon {
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			background: #e5e5e5;
+			margin-top: 110px;
+			text-align: center;
+			line-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<section class="sevice">
+		<div class="container">
+			<div class="col">
+				<div class="sertab" data-tab="1">
+					<h4>WEB DESIGN</h4>
+				</div>
+				<div class="sertab" data-tab="2">
+					<h4>WEB DEVELOPING</h4>
+				</div>
+			</div>
+			<div class="col">
+				<div class="sericon">
+					<i class="serimage"></i>
+				</div>
+			</div>
+			<div class="col">
+				<div class="sertab" data-tab="3">
+					<h4>APP DEVELOPING</h4>
+				</div>
+				<div class="sertab" data-tab="4">
+					<h4>UI/UX</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+		$(function(){
+			var sertab = $(".sertab");
+			var serimage = $(".serimage");
+			serimage.fadeOut(function() {
+			  $(this).text("WEB DESIGN")
+			}).slideDown('1000');
+
+			$(sertab).on("click",function(){
+				var datatab = $(this).data('tab');
+				switch(datatab) {
+					case 1:
+						serimage.fadeOut(function() {
+						  $(this).text("WEB DESIGN")
+						}).slideDown('1000');
+						break;
+					case 2:
+						serimage.fadeOut(function() {
+						  $(this).text("WEB DEVELOPING")
+						}).slideDown('1000');
+						break;
+					case 3:
+						serimage.fadeOut(function() {
+						  $(this).text("APP DEVELOPING")
+						}).slideDown('1000');
+						break;
+					case 4:
+						serimage.fadeOut(function() {
+						  $(this).text("UI/UX")
+						}).slideDown('1000');
+						break;
+				}
+			});
+		});
+	</script>
+</body>
+</html>
