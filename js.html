@@ -120,7 +120,7 @@
 			display: none;
 			width: 100%;
 			height: auto;
-			min-height: 280px;
+			min-height: 380px;
 			border: 1px solid #FFB117;
 			border-top: none;
 			border-bottom-left-radius: 5px;
@@ -143,6 +143,22 @@
 		}
 
 		#tab-1 { display: block; }
+		/*  skill part start */
+		.skill { margin-top: 20px; }
+
+		.bar {
+			max-width: 400px;
+			height: 7px;
+			background-color: #e5e5e5;
+			border-radius: 5px;
+		}
+		.progress {
+			width: 0;
+			height: 100%;
+			background-color: tomato;
+			border-radius: 5px;
+		}
+		/* skill part end */
 
 		.xp-info { margin-bottom: 20px; }
 
@@ -178,12 +194,38 @@
 		</ul>
 		
 		<div class="panel" id="tab-1">
-			<h3>Hi! I am Anik Hossain</h3>
-			<p>I am a WordPress & Front-end Developer, working for the last five years. I have experience working with local clients along with clients from all around the world. I have vast knowledge in html, css, Javascript , JQuery, Angular (javascript framewok), wordpress theme development and so on. The work I provide is of highest quality, fully responsive, and tested in a wide range of devices.</p>
+			<h3>Hi! I am Ashikur Rahman Tusar</h3>
+			<p>I am a Front-end & JavaScript Plug-in Developer, working for the last tow years. I have experience working with local clients along with clients from all around the world. I have vast knowledge in html, css, Javascript , JQuery, Angular (javascript framewok) theme development and so on. The work I provide is of highest quality, fully responsive, and tested in a wide range of devices.</p>
 		</div>
 
 		<div class="panel" id="tab-2">
-			
+			<div class="skill">
+				<h3>Web Design: <span class="pah"></span>%</h3>
+				<div class="bar">
+					<div class="progress" data-pro="80"></div>
+				</div>
+			</div>
+
+			<div class="skill">
+				<h3>Web Developing: <span class="pah"></span>%</h3>
+				<div class="bar">
+					<div class="progress" data-pro="60"></div>
+				</div>
+			</div>
+
+			<div class="skill">
+				<h3>UI/UX: <span class="pah"></span>%</h3>
+				<div class="bar">
+					<div class="progress" data-pro="70"></div>
+				</div>
+			</div>
+
+			<div class="skill">
+				<h3>APPs Developing: <span class="pah"></span>%</h3>
+				<div class="bar">
+					<div class="progress" data-pro="55"></div>
+				</div>
+			</div>
 		</div>
 		<div class="panel" id="tab-3">
 			<div class="xp-info">
@@ -203,6 +245,29 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		$(function(){
+			
+			var prog= $('.progress');
+			function progress() {
+				var pah = $('.pah');
+
+				for(var j = 0; j <= prog.length; j++) {
+					var pro = $(prog[j]).data('pro');
+
+					$(prog[j]).animate({width: pro + "%"}, 1000);
+
+					$(pah[j]).each(function () {
+						$(this).prop('Counter',0).animate({Counter: pro}, 
+						{
+							duration: 1000,
+							easing: 'swing',
+							step: function (now) {
+								$(this).text(Math.ceil(now));
+							}
+						});
+					});
+				}
+			}
+
 			var a = ['1','2','3'];
 			var get = [];
 			var remain = [];
@@ -217,6 +282,11 @@
 							{ opacity: 1 },
 							{ queue: false, duration: 'slow' }
 						);
+						if(a[i] == 2) {
+							progress();
+						} else {
+							$(prog).css("width", "0%");
+						}
 					} else {
 						remain += a[i];
 					}

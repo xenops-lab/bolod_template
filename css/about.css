@@ -169,3 +169,11 @@
     font-weight: 500;
     padding-bottom: 10px;
 }
+
+/* 
+   about-profile
+   ========================================================================== */
+.profile--social-link a > i {
+	color: #04bc89;
+}
+
