@@ -1,0 +1,171 @@
+.tablinks {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.tablinks li {
+    list-style: none;
+    float: left;
+    width: 33.3357%
+}
+
+.tablinks::before,
+.tablinks::after {
+    display: table;
+    content: '';
+}
+
+.tablinks::after {
+    clear: both;
+}
+
+.tablinks button {
+    font-family: 'courgette';
+    font-weight: 400;
+    font-size: 1em;
+    color: #04bc89;
+    border: none;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    outline: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.tablinks button:hover {
+    color: #04bc89;
+    border-color: #04bc89;
+}
+
+.tablinks button:hover .tablinks {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.tablinks button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 15px solid #04bc89;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    visibility: hidden;
+    -webkit-transition: all ease-in .2s;
+    -o-transition: all ease-in .2s;
+    transition: all ease-in .2s;
+}
+
+.tablinks button:focus {
+    color: #fbfbfb;
+    background-color: #04bc89;
+    border-color: #04bc89;
+}
+
+.tablinks button:focus::after {
+    visibility: visible;
+    border-top: 15px solid #04bc89;
+}
+
+.tablinks button#active {
+    color: #fbfbfb;
+    background-color: #04bc89;
+    border-color: #04bc89;
+}
+
+.tablinks button#active::after {
+    visibility: visible;
+    border-top: 15px solid #04bc89;
+}
+
+.panel {
+    display: none;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    font-family: 'dosis', sans-serif;
+    border: 1px solid #04bc89;
+    border-top: none;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+}
+
+.panel h3 {
+    font-weight: 500;
+    font-size: 1.875em;
+    color: #666;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.panel p {
+    font-weight: 300;
+    font-size: 1em;
+    color: #777;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+#tab-1 {
+    display: block;
+}
+/* skill tab */
+.skill {
+	margin: 15px 0;
+	padding: 0;
+}
+
+.skill h4 {
+	font-size: 1.125em;
+}
+
+.bar {
+	max-width: 400px;
+	height: 7px;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+}
+.progress {
+	width: 0;
+	height: 100%;
+	background-color: #04bc89;
+	border-radius: 5px;
+}
+
+/* experience tab */
+.xp-info {
+    margin-bottom: 20px;
+}
+
+.xp-info h3,
+.xp-info h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.xp-info h3 {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+.xp-info h5 {
+    font-style: italic;
+    font-size: 1.0625em;
+    font-weight: 500;
+    padding-bottom: 10px;
+}

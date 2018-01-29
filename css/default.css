@@ -1,0 +1,43 @@
+/* ==========================================================================
+   common css class
+   ========================================================================== */
+.flex-container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.center-y {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.center-x {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.center-xy {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.section-title {
+	font-family: 'dosis';
+	font-weight: 700;
+	color: #ffb117;
+	font-size: 2.625em;
+	text-transform: uppercase;
+	border-bottom: 2px dotted #ffb117;
+	max-width: 180px;
+	margin: 0 auto;
+}
